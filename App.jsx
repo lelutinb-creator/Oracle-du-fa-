@@ -6,7 +6,8 @@ import ODU from "./data/odu";
 
 const CONSULT_PRICE = 2.0;
 
-export default function App(){
+export default function App() 
+{
 const [authorized, setAuthorized] = useState(false);
 const [code, setCode] = useState("");
 
@@ -70,7 +71,7 @@ const verifyCode = async () => {
   }
   const [lang, setLang] = useState("fr");
   const [odu, setOdu] = useState(null);
-  const [showFull, setShowFull] = useState(false);
+  const [{!authorized ? ( , set{!authorized ? ( ] = useState(false);
   const [loading, setLoading] = useState(false);
   const [history, setHistory] = useState([]);
 
@@ -230,7 +231,7 @@ const verifyCode = async () => {
                     <div style={{marginTop:8, padding:8, background:"#FFF3D9", borderRadius:6}}>
                       <strong>{lang==="fr"?"Rituels / Offrandes":"Gbò kòn / Rituels"}</strong>
                       <div>{odu.ritual}</div>
-                      <div style={{marginTop:6}}><a href={"https://wa.me/22960000000?text=Bonjour,%20je%20souhaite%20organiser%20les%20rituels%20suite%20%C3%A0%20ma%20consultation."} target="_blank" rel="noreferrer">Contacter le bokonon (WhatsApp)</a></div>
+                      <div style={{marginTop:6}}><a href={"https://wa.me/2290169941262?text=Bonjour,%20je%20souhaite%20organiser%20les%20rituels%20suite%20%C3%A0%20ma%20consultation."} target="_blank" rel="noreferrer">Contacter le bokonon (WhatsApp)</a></div>
                     </div>
                   </div>
                 )}
