@@ -88,7 +88,8 @@ const verifyCode = async () => {
     setLoading(false);
   }
 
-  async function payWithCard(){
+  async function payWithCard()
+                         {
     // call backend to create payment intent
     try{
       setLoading(true);
