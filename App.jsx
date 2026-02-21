@@ -66,8 +66,8 @@ const verifyCode = async () => {
         <button onClick={verifyCode}>Valider</button>
       </div>
     );
+    
   }
-
   const [lang, setLang] = useState("fr");
   const [odu, setOdu] = useState(null);
   const [showFull, setShowFull] = useState(false);
