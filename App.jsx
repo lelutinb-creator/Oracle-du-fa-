@@ -33,7 +33,7 @@ const verifyCode = async () => {
   const [code, setCode] = useState("");
 
   const verifyCode = async () => {
-    const res = await fetch("http://localhost:3001/verify-code", {
+    const res = await fetch("https://oracle-fa-server.onrender.com/verify-code", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ code })
