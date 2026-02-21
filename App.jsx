@@ -7,6 +7,27 @@ import ODU from "./data/odu";
 const CONSULT_PRICE = 2.0;
 
 export default function App(){
+const [authorized, setAuthorized] = useState(false);
+const [code, setCode] = useState("");
+
+const verifyCode = async () => {
+  const res = await fetch("https://oracle-fa-server.onrender.com/verify-code", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ code })
+  });
+
+  const data = await res.json();
+
+  if (data.success) {
+    setAuthorized(true);
+  } else {
+    alert("Code invalide");
+  }
+};
+  
   const [authorized, setAuthorized] = useState(false);
   const [code, setCode] = useState("");
 
