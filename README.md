@@ -15,8 +15,6 @@ See project tree in repository. Frontend (React + Vite) and backend (Express) in
 ## Environment (.env)
 Create `.env` in `server/` with:
 ```
-STRIPE_SECRET_KEY=sk_test_xxx
-STRIPE_WEBHOOK_SECRET=whsec_xxx
 PORT=4000
 ```
 
