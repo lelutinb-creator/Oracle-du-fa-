@@ -172,10 +172,35 @@ export default function App(){
                   <div style={{marginTop:12}}>
                     <div style={{fontSize:13, marginBottom:8}}>{lang==="fr"?"Choisissez un moyen de paiement pour débloquer l'interprétation complète.":"Choisi gbòn kòno."}</div>
                     <div style={{display:"flex", gap:8, flexWrap:"wrap"}}>
-                      <button onClick={()=>payMobileMoney("mobile_money")}>Mobile Money</button>
-                      <button onClick={()=>payMobileMoney("flooz")}>Flooz</button>
-                      <button onClick={payWithCard}>Carte bancaire</button>
-                    </div>
+                      <div style={{marginTop:12}}>
+     <h4>Paiement requis</h4>
+
+  <p>Veuillez effectuer le paiement :</p>
+
+  <p><strong>MTN MoMo :</strong> 0169941262</p>
+  <p><strong>MOOV Money :</strong> 0158297075</p>
+
+  <p>Après paiement, envoyez la référence sur WhatsApp :</p>
+
+  <p><strong>WhatsApp :</strong> 0169941262</p>
+
+  <h4>Tarifs :</h4>
+  <ul>
+    <li>1 Consultation : 1 000F</li>
+    <li>3 Consultations : 2 500F</li>
+    <li>7 Consultations : 5 000F</li>
+    <li>Accès 1 mois : 10 000F</li>
+  </ul>
+
+  <p>Ensuite entrez votre code :</p>
+
+  <input
+    placeholder="Entrer votre code d'accès"
+    onChange={(e)=>setCode(e.target.value)}
+  />
+
+  <button onClick={verifyCode}>Valider</button>
+</div>
                   </div>
                 ) : (
                   <div style={{marginTop:12}}>
